@@ -1,0 +1,621 @@
+{
+  "sections": {
+    "hero": {
+      "type": "custom-section",
+      "blocks": {
+        "group_hero": {
+          "type": "group",
+          "name": "Hero À propos",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "color_scheme": "scheme-3",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 60,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 1,
+            "layout_gap_desktop": 15,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 40,
+            "padding_vertical": 60,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_hero_label": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Notre histoire</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_hero_title": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h1>Rocaraid — Des pièces introuvables, fabriquées en France</h1>",
+                "text_style": "h2",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_hero_sub": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Pièces plastiques rares, refabrication et accessoires sur mesure pour véhicules de collection et motos. Fabriqué à la commande, livré rapidement.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "large",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["text_hero_label", "text_hero_title", "text_hero_sub"]
+        }
+      },
+      "block_order": ["group_hero"],
+      "name": "Hero",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "full_width",
+        "color_scheme": "scheme-3",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 1,
+        "layout_gap_desktop": 0,
+        "layout_flex_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "flex-start",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 0,
+        "layout_flex_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "histoire": {
+      "type": "custom-section",
+      "blocks": {
+        "group_histoire_text": {
+          "type": "group",
+          "name": "Notre histoire",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 55,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 1,
+            "layout_gap_desktop": 20,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 15,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 40,
+            "padding_vertical": 40,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_hist_label": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Pourquoi Rocaraid ?</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_hist_title": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h2>Née d'un problème réel, au fond d'un garage</h2>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_hist_body": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Tout a commencé avec une Renault 4L et une pièce plastique cassée, introuvable dans le commerce. Plutôt que de laisser le véhicule à l'arrêt, on l'a refabriquée.</p><p>De fil en aiguille, d'autres passionnés ont eu le même problème. C'est comme ça que <strong>Rocaraid</strong> est né : une marque française qui conçoit et fabrique des pièces rares, des pièces de refabrication, et des accessoires sur mesure — pour que vos véhicules continuent de rouler.</p><p>Aujourd'hui on s'adresse aux propriétaires de <strong>Renault 4L, R5, R6</strong> et aux motards qui cherchent des accessoires pratiques comme les <strong>supports Carpuride</strong>. Demain, à bien d'autres encore.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["text_hist_label", "text_hist_title", "text_hist_body"]
+        },
+        "image_histoire": {
+          "type": "image",
+          "name": "Image histoire",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "show_placeholder": true,
+            "link": "",
+            "image_ratio": "adapt",
+            "image_width_desktop": 45,
+            "image_width_mobile": 100,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["group_histoire_text", "image_histoire"],
+      "name": "Notre histoire",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "normal",
+        "color_scheme": "",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 2,
+        "layout_gap_desktop": 60,
+        "layout_flex_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "space-between",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 30,
+        "layout_flex_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "valeurs": {
+      "type": "custom-section",
+      "blocks": {
+        "text_val_title": {
+          "type": "text",
+          "name": "Titre valeurs",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h2>Ce qui nous définit</h2>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "group_valeurs_grid": {
+          "type": "group",
+          "name": "Grille valeurs",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "grid",
+            "width_desktop": 100,
+            "layout_direction_desktop": "row",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 30,
+            "layout_wrap_desktop": "wrap",
+            "layout_justify_desktop": "flex-start",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 20,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": false,
+            "padding_horizontal": 0,
+            "padding_vertical": 0,
+            "margin_top": 30,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "icon_val_1": {
+              "type": "icon-with-text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 10,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 8,
+                "icon_type": "icon",
+                "icon": "build",
+                "icon_custom": "",
+                "icon_size": 36,
+                "icon_position": "start",
+                "text": "<p><strong>Fabriqué en France</strong><br/>Chaque pièce est produite localement, en PETG, ABS ou ASA selon l'usage. Pas de stock mort : on fabrique à la commande.</p>",
+                "text_style": "paragraph",
+                "font_weight": 400,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "icon_val_2": {
+              "type": "icon-with-text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 10,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 8,
+                "icon_type": "icon",
+                "icon": "verified",
+                "icon_custom": "",
+                "icon_size": 36,
+                "icon_position": "start",
+                "text": "<p><strong>Compatibilité vérifiée</strong><br/>Chaque pièce est conçue et testée sur le véhicule cible. Pas de mauvaise surprise au montage.</p>",
+                "text_style": "paragraph",
+                "font_weight": 400,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "icon_val_3": {
+              "type": "icon-with-text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 10,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 8,
+                "icon_type": "icon",
+                "icon": "eco",
+                "icon_custom": "",
+                "icon_size": 36,
+                "icon_position": "start",
+                "text": "<p><strong>Accessible à tous</strong><br/>Des pièces de qualité à des prix justes. L'objectif : que personne ne laisse son véhicule à l'arrêt faute de trouver la pièce.</p>",
+                "text_style": "paragraph",
+                "font_weight": 400,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["icon_val_1", "icon_val_2", "icon_val_3"]
+        }
+      },
+      "block_order": ["text_val_title", "group_valeurs_grid"],
+      "name": "Nos valeurs",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "normal",
+        "color_scheme": "scheme-2",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 1,
+        "layout_gap_desktop": 20,
+        "layout_flex_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 20,
+        "layout_flex_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "trophy": {
+      "type": "custom-section",
+      "blocks": {
+        "group_trophy": {
+          "type": "group",
+          "name": "4L Trophy",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": false,
+            "color_scheme": "",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 55,
+            "layout_direction_desktop": "column",
+            "layout_grid_columns_desktop": 1,
+            "layout_gap_desktop": 20,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "center",
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 15,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 40,
+            "padding_vertical": 40,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "text_trophy_label": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Terrain d'essai</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_trophy_title": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<h2>Éprouvé au 4L Trophy 2026</h2>",
+                "text_style": "h3",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "text_trophy_body": {
+              "type": "text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "<p>Le 4L Trophy, c'est un des raids les plus exigeants pour une Renault 4L : des pistes marocaines, des températures extrêmes, des vibrations permanentes.</p><p>Nos pièces ont été <strong>utilisées et validées sur le 4L Trophy 2026</strong>. C'est notre preuve de terrain : si ça tient là-bas, ça tient partout.</p>",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": ["text_trophy_label", "text_trophy_title", "text_trophy_body"]
+        },
+        "image_trophy": {
+          "type": "image",
+          "name": "Image 4L Trophy",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "show_placeholder": true,
+            "link": "",
+            "image_ratio": "adapt",
+            "image_width_desktop": 45,
+            "image_width_mobile": 100,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["image_trophy", "group_trophy"],
+      "name": "4L Trophy",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "normal",
+        "color_scheme": "",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "row",
+        "layout_grid_columns_desktop": 2,
+        "layout_gap_desktop": 60,
+        "layout_flex_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "space-between",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": false,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 30,
+        "layout_flex_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "flex-start",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    },
+    "contact_cta": {
+      "type": "custom-section",
+      "blocks": {
+        "text_cta_title": {
+          "type": "text",
+          "name": "Titre CTA",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<h2>Une question ? On est là.</h2>",
+            "text_style": "h3",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "text_cta_sub": {
+          "type": "text",
+          "name": "Sous-titre CTA",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>Compatibilité, délai, commande spécifique... Contactez-nous, on répond rapidement.</p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "large",
+            "font_weight": 400,
+            "alignment": "center",
+            "alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
+        "btn_contact": {
+          "type": "button",
+          "name": "Bouton contact",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "link": "/pages/contact",
+            "open_in_new_tab": false,
+            "label": "Nous contacter",
+            "button_style": "primary",
+            "button_shape": "default",
+            "icon": "none",
+            "icon_custom": "",
+            "icon_position": "end",
+            "margin_top": 20,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": ["text_cta_title", "text_cta_sub", "btn_contact"],
+      "name": "CTA Contact",
+      "settings": {
+        "show_on_display": "desktop_and_mobile",
+        "section_width": "normal",
+        "color_scheme": "scheme-3",
+        "wrap_in_card": false,
+        "color_scheme_card": "",
+        "layout_type": "flex",
+        "layout_flex_direction_desktop": "column",
+        "layout_grid_columns_desktop": 1,
+        "layout_gap_desktop": 10,
+        "layout_flex_wrap_desktop": "nowrap",
+        "layout_flex_justify_desktop": "center",
+        "layout_flex_align_items_desktop": "center",
+        "same_as_desktop": true,
+        "layout_flex_direction_mobile": "column",
+        "layout_gap_mobile": 10,
+        "layout_flex_wrap_mobile": "nowrap",
+        "layout_flex_justify_mobile": "flex-start",
+        "layout_flex_align_items_mobile": "center",
+        "layout_grid_columns_mobile": 1,
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "additional_class": ""
+      }
+    }
+  },
+  "order": ["hero", "histoire", "valeurs", "trophy", "contact_cta"]
+}
