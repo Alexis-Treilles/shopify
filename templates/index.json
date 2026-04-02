@@ -173,7 +173,7 @@
                   "name": "Sous titre",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Des pièces plastiques rares pour votre Renault 4L et des accessoires pour votre moto. Fabriqué en France, accessible à tous.</p>",
+                    "text": "<p>Des pièces rares pour votre Renault 4L, et autres voitures anciennces, disponible à la demande.Des accessoires pour votre moto. Fabriqué en France, accessible à tous.</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "large",
                     "font_weight": 400,
@@ -318,7 +318,7 @@
                         "icon_custom": "",
                         "icon_size": 22,
                         "icon_position": "start",
-                        "text": "<p>Compatibilité garantie pour votre modèle</p>",
+                        "text": "<p>Couleur au choix</p><p></p>",
                         "text_style": "paragraph",
                         "font_weight": 400,
                         "margin_top": 0,
@@ -463,7 +463,7 @@
                   "name": "t:text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Pièces plastiques introuvables en neuf, remises à disposition. Compatibles d'origine, fabriquées en France.</p>",
+                    "text": "<p>Pièces plastiques de re fabrication ou sur mesure remises à disposition. Compatibles d'origine, fabriquées en France.</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -1023,7 +1023,7 @@
               "name": "t:title",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<h2>Précision, compatibilité, durabilité</h2>",
+                "text": "<h2> compatibilité, Made in France<br/>à la demande</h2>",
                 "text_style": "h3",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
