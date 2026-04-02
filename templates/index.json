@@ -805,7 +805,7 @@
             "button_moto"
           ]
         },
-        "product-card-moto": {
+        "product-card": {
           "type": "_product-card",
           "static": true,
           "settings": {
@@ -813,121 +813,7 @@
             "color_scheme": "",
             "layout_gap": 10
           },
-          "blocks": {
-            "product_card_media_moto": {
-              "type": "_product-card-media-gallery",
-              "name": "t:product_card_gallery",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "show_slider": true,
-                "media_rounded": true,
-                "show_badges": true,
-                "media_ratio": "1 / 1",
-                "additional_class": ""
-              },
-              "blocks": {}
-            },
-            "product_card_group_moto": {
-              "type": "_product-card-group",
-              "name": "t:group",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "wrap_in_card": false,
-                "color_scheme": "scheme-3",
-                "layout_direction_desktop": "column",
-                "layout_gap_desktop": 5,
-                "layout_wrap_desktop": "nowrap",
-                "layout_justify_desktop": "flex-start",
-                "layout_align_items_desktop": "flex-start",
-                "same_as_desktop": true,
-                "layout_direction_mobile": "column",
-                "layout_gap_mobile": 10,
-                "layout_wrap_mobile": "nowrap",
-                "layout_justify_mobile": "flex-start",
-                "layout_align_items_mobile": "flex-start",
-                "margin_top": 10,
-                "margin_bottom": 10,
-                "additional_class": ""
-              },
-              "blocks": {
-                "text_moto_product_title": {
-                  "type": "text",
-                  "name": "t:text",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "text": "<h2>{{ closest.product.title }}</h2>",
-                    "text_style": "paragraph",
-                    "paragraph_font_size": "normal",
-                    "font_weight": 500,
-                    "alignment": "left",
-                    "alignment_mobile": "left",
-                    "show_read_more": false,
-                    "read_more_length": 200,
-                    "read_more_text": "Voir plus",
-                    "read_less_text": "Voir moins",
-                    "truncate": false,
-                    "truncate_length": 2,
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "additional_class": ""
-                  },
-                  "blocks": {}
-                },
-                "product_price_moto": {
-                  "type": "product-price",
-                  "name": "t:product_price",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "product": "{{ closest.product }}",
-                    "sales_badge": "amount",
-                    "show_sales_badge_text": false,
-                    "text_style": "paragraph",
-                    "additional_class": ""
-                  },
-                  "blocks": {}
-                },
-                "rating_stars_moto": {
-                  "type": "rating-stars",
-                  "name": "t:rating_stars",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "product": "{{ closest.product }}",
-                    "hide_rating_when_no_reviews": false,
-                    "rating": 4.5,
-                    "show_note": true,
-                    "show_review_count": true,
-                    "review_count": 123,
-                    "link": "",
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "additional_class": ""
-                  },
-                  "blocks": {}
-                },
-                "swatches_moto": {
-                  "type": "_product-card-swatches",
-                  "name": "t:swatches",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "swatches_size": "small",
-                    "swatches_rounded": true,
-                    "additional_class": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_moto_product_title",
-                "product_price_moto",
-                "rating_stars_moto",
-                "swatches_moto"
-              ]
-            }
-          },
-          "block_order": [
-            "product_card_media_moto",
-            "product_card_group_moto"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
@@ -1234,7 +1120,7 @@
                         "icon_custom": "",
                         "icon_size": 32,
                         "icon_position": "start",
-                        "text": "<p><strong>Compatible sur les modèles cités</strong><br/>Chaque pièce est testée et validée sur les véhicules pour lesquels elle est conçue.</p>",
+                        "text": "<p><strong>Compatible Garantie</strong><br/>Chaque pièce est testée et validée sur les véhicules pour lesquels elle est conçue.</p>",
                         "text_style": "paragraph",
                         "font_weight": 500,
                         "margin_top": 0,
