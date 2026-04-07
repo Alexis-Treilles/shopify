@@ -250,7 +250,7 @@
                         "text": "<p>🇫🇷 Fabriqué en France</p>",
                         "text_style": "paragraph",
                         "paragraph_font_size": "normal",
-                        "font_weight": "400",
+                        "font_weight": 400,
                         "alignment": "center",
                         "alignment_mobile": "center",
                         "show_read_more": false,

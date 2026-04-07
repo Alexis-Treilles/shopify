@@ -84,10 +84,16 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_hero_label", "text_hero_title", "text_hero_sub"]
+          "block_order": [
+            "text_hero_label",
+            "text_hero_title",
+            "text_hero_sub"
+          ]
         }
       },
-      "block_order": ["group_hero"],
+      "block_order": [
+        "group_hero"
+      ],
       "name": "Hero",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -200,7 +206,11 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_hist_label", "text_hist_title", "text_hist_body"]
+          "block_order": [
+            "text_hist_label",
+            "text_hist_title",
+            "text_hist_body"
+          ]
         },
         "image_histoire": {
           "type": "image",
@@ -217,7 +227,10 @@
           "blocks": {}
         }
       },
-      "block_order": ["group_histoire_text", "image_histoire"],
+      "block_order": [
+        "group_histoire_text",
+        "image_histoire"
+      ],
       "name": "Notre histoire",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -228,7 +241,7 @@
         "layout_type": "flex",
         "layout_flex_direction_desktop": "row",
         "layout_grid_columns_desktop": 2,
-        "layout_gap_desktop": 60,
+        "layout_gap_desktop": 50,
         "layout_flex_wrap_desktop": "nowrap",
         "layout_flex_justify_desktop": "space-between",
         "layout_flex_align_items_desktop": "center",
@@ -291,8 +304,8 @@
             "layout_justify_mobile": "flex-start",
             "layout_align_items_mobile": "flex-start",
             "use_global_container_padding": false,
-            "padding_horizontal": 0,
-            "padding_vertical": 0,
+            "padding_horizontal": 10,
+            "padding_vertical": 10,
             "margin_top": 30,
             "margin_bottom": 0,
             "additional_class": ""
@@ -368,10 +381,17 @@
               "blocks": {}
             }
           },
-          "block_order": ["icon_val_1", "icon_val_2", "icon_val_3"]
+          "block_order": [
+            "icon_val_1",
+            "icon_val_2",
+            "icon_val_3"
+          ]
         }
       },
-      "block_order": ["text_val_title", "group_valeurs_grid"],
+      "block_order": [
+        "text_val_title",
+        "group_valeurs_grid"
+      ],
       "name": "Nos valeurs",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -484,7 +504,11 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_trophy_label", "text_trophy_title", "text_trophy_body"]
+          "block_order": [
+            "text_trophy_label",
+            "text_trophy_title",
+            "text_trophy_body"
+          ]
         },
         "image_trophy": {
           "type": "image",
@@ -501,7 +525,10 @@
           "blocks": {}
         }
       },
-      "block_order": ["image_trophy", "group_trophy"],
+      "block_order": [
+        "image_trophy",
+        "group_trophy"
+      ],
       "name": "4L Trophy",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -512,7 +539,7 @@
         "layout_type": "flex",
         "layout_flex_direction_desktop": "row",
         "layout_grid_columns_desktop": 2,
-        "layout_gap_desktop": 60,
+        "layout_gap_desktop": 50,
         "layout_flex_wrap_desktop": "nowrap",
         "layout_flex_justify_desktop": "space-between",
         "layout_flex_align_items_desktop": "center",
@@ -587,7 +614,11 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_cta_title", "text_cta_sub", "btn_contact"],
+      "block_order": [
+        "text_cta_title",
+        "text_cta_sub",
+        "btn_contact"
+      ],
       "name": "CTA Contact",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -617,5 +648,11 @@
       }
     }
   },
-  "order": ["hero", "histoire", "valeurs", "trophy", "contact_cta"]
+  "order": [
+    "hero",
+    "histoire",
+    "valeurs",
+    "trophy",
+    "contact_cta"
+  ]
 }
