@@ -1,26 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
-        "rating_stars_Krck47": {
-          "type": "rating-stars",
-          "name": "t:rating_stars",
-          "settings": {
-            "show_on_display": "desktop_and_mobile",
-            "product": "{{ closest.product }}",
-            "hide_rating_when_no_reviews": true,
-            "rating": 4.5,
-            "show_note": true,
-            "show_review_count": true,
-            "review_count": 123,
-            "link": "#reviews",
-            "margin_top": 10,
-            "margin_bottom": 0,
-            "additional_class": ""
-          },
-          "blocks": {}
-        },
         "text_zLqMQw": {
           "type": "text",
           "name": "t:title",
@@ -57,24 +48,19 @@
           },
           "blocks": {}
         },
-        "text_yQdqF8": {
-          "type": "text",
-          "name": "t:text",
+        "rating_stars_Krck47": {
+          "type": "rating-stars",
+          "name": "t:rating_stars",
           "settings": {
             "show_on_display": "desktop_and_mobile",
-            "text": "{{ closest.product.description }}",
-            "text_style": "paragraph",
-            "paragraph_font_size": "normal",
-            "font_weight": 400,
-            "alignment": "left",
-            "alignment_mobile": "left",
-            "show_read_more": false,
-            "read_more_length": 50,
-            "read_more_text": "Voir plus",
-            "read_less_text": "Voir moins",
-            "truncate": false,
-            "truncate_length": 10,
-            "margin_top": 20,
+            "product": "{{ closest.product }}",
+            "hide_rating_when_no_reviews": true,
+            "rating": 4.5,
+            "show_note": true,
+            "show_review_count": true,
+            "review_count": 123,
+            "link": "#reviews",
+            "margin_top": 10,
             "margin_bottom": 0,
             "additional_class": ""
           },
@@ -204,6 +190,7 @@
             },
             "accelerated-checkout": {
               "type": "_accelerated-checkout",
+              "disabled": true,
               "static": true,
               "settings": {
                 "show_on_display": "desktop_and_mobile",
@@ -213,8 +200,7 @@
                 "margin_bottom": 0,
                 "additional_class": ""
               },
-              "blocks": {},
-              "disabled": true
+              "blocks": {}
             }
           },
           "block_order": [
@@ -235,6 +221,29 @@
           },
           "blocks": {}
         },
+        "text_yQdqF8": {
+          "type": "text",
+          "name": "t:text",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "{{ closest.product.description }}",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 10,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
         "accordions_KKUaHK": {
           "type": "accordions",
           "name": "t:accordions",
@@ -245,22 +254,22 @@
             "additional_class": ""
           },
           "blocks": {
-            "accordion_mEqYBU": {
+            "accordion_materiaux": {
               "type": "_accordion",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "heading": "Politique de retour",
+                "heading": "Matériaux & qualité",
                 "open_by_default": false,
                 "icon": "none",
                 "icon_custom": "",
                 "additional_class": ""
               },
               "blocks": {
-                "text_KyCgAW": {
+                "text_mat": {
                   "type": "text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text": "<p>Nos pièces sont fabriquées en <strong>matériaux techniques haute performance</strong> :<br/><br/>• <strong>PETG</strong> : résistance mécanique, légèreté, idéal pour les pièces intérieures<br/>• <strong>ABS</strong> : robustesse et résistance aux chocs<br/>• <strong>ASA</strong> : résistance aux UV et aux intempéries, pour les pièces exposées<br/><br/>Chaque matériau est choisi selon l'application et l'environnement de la pièce. Nos produits sont <strong>éprouvés dans des environnements contraignants</strong>, notamment sur le 4L Trophy 2026.</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -280,7 +289,7 @@
                 }
               },
               "block_order": [
-                "text_KyCgAW"
+                "text_mat"
               ]
             },
             "accordion_gU7QYn": {
@@ -321,22 +330,22 @@
                 "text_zgU7ap"
               ]
             },
-            "accordion_materiaux": {
+            "accordion_mEqYBU": {
               "type": "_accordion",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "heading": "Matériaux & qualité",
+                "heading": "Politique de retour",
                 "open_by_default": false,
                 "icon": "none",
                 "icon_custom": "",
                 "additional_class": ""
               },
               "blocks": {
-                "text_mat": {
+                "text_KyCgAW": {
                   "type": "text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Nos pièces sont fabriquées en <strong>matériaux techniques haute performance</strong> :<br/><br/>• <strong>PETG</strong> : résistance mécanique, légèreté, idéal pour les pièces intérieures<br/>• <strong>ABS</strong> : robustesse et résistance aux chocs<br/>• <strong>ASA</strong> : résistance aux UV et aux intempéries, pour les pièces exposées<br/><br/>Chaque matériau est choisi selon l'application et l'environnement de la pièce. Nos produits sont <strong>éprouvés dans des environnements contraignants</strong>, notamment sur le 4L Trophy 2026.</p>",
+                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -356,7 +365,7 @@
                 }
               },
               "block_order": [
-                "text_mat"
+                "text_KyCgAW"
               ]
             }
           },
@@ -499,37 +508,14 @@
             "additional_class": ""
           },
           "blocks": {}
-        },
-        "text_metadesc": {
-          "type": "text",
-          "name": "t:text",
-          "settings": {
-            "show_on_display": "desktop_and_mobile",
-            "text": "{{ closest.product.metafields.global.description_tag }}",
-            "text_style": "paragraph",
-            "paragraph_font_size": "normal",
-            "font_weight": 400,
-            "alignment": "left",
-            "alignment_mobile": "left",
-            "show_read_more": false,
-            "read_more_length": 200,
-            "read_more_text": "Voir plus",
-            "read_less_text": "Voir moins",
-            "truncate": false,
-            "truncate_length": 2,
-            "margin_top": 10,
-            "margin_bottom": 0,
-            "additional_class": ""
-          }
         }
       },
       "block_order": [
-        "rating_stars_Krck47",
-        "price_yEeMeb",
         "text_zLqMQw",
+        "price_yEeMeb",
+        "rating_stars_Krck47",
         "product_form_grYQk6",
         "payment_methods_BdjpFB",
-        "text_metadesc",
         "text_yQdqF8",
         "accordions_KKUaHK",
         "group_dddxG7"
@@ -1378,6 +1364,12 @@
                         "font_weight": 400,
                         "alignment": "left",
                         "alignment_mobile": "left",
+                        "show_read_more": false,
+                        "read_more_length": 50,
+                        "read_more_text": "Voir plus",
+                        "read_less_text": "Voir moins",
+                        "truncate": false,
+                        "truncate_length": 2,
                         "margin_top": 0,
                         "margin_bottom": 0,
                         "additional_class": ""
