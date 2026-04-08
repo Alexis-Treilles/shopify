@@ -48,24 +48,6 @@
           },
           "blocks": {}
         },
-        "rating_stars_Krck47": {
-          "type": "rating-stars",
-          "name": "t:rating_stars",
-          "settings": {
-            "show_on_display": "desktop_and_mobile",
-            "product": "{{ closest.product }}",
-            "hide_rating_when_no_reviews": true,
-            "rating": 4.5,
-            "show_note": true,
-            "show_review_count": true,
-            "review_count": 123,
-            "link": "#reviews",
-            "margin_top": 10,
-            "margin_bottom": 0,
-            "additional_class": ""
-          },
-          "blocks": {}
-        },
         "product_form_grYQk6": {
           "type": "_product-form",
           "name": "t:product_form",
@@ -156,6 +138,29 @@
               },
               "block_order": []
             },
+            "text_yQdqF8": {
+              "type": "text",
+              "name": "t:text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "text": "{{ closest.product.description }}",
+                "text_style": "paragraph",
+                "paragraph_font_size": "normal",
+                "font_weight": 400,
+                "alignment": "left",
+                "alignment_mobile": "left",
+                "show_read_more": false,
+                "read_more_length": 50,
+                "read_more_text": "Voir plus",
+                "read_less_text": "Voir moins",
+                "truncate": false,
+                "truncate_length": 10,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
             "product-add-to-cart-button": {
               "type": "_product-add-to-cart-button",
               "static": true,
@@ -201,29 +206,6 @@
                 "additional_class": ""
               },
               "blocks": {}
-            },
-            "text_yQdqF8": {
-              "type": "text",
-              "name": "t:text",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "text": "{{ closest.product.description }}",
-                "text_style": "paragraph",
-                "paragraph_font_size": "normal",
-                "font_weight": 400,
-                "alignment": "left",
-                "alignment_mobile": "left",
-                "show_read_more": false,
-                "read_more_length": 50,
-                "read_more_text": "Voir plus",
-                "read_less_text": "Voir moins",
-                "truncate": false,
-                "truncate_length": 10,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
             }
           },
           "block_order": [
@@ -244,6 +226,117 @@
             "additional_class": ""
           },
           "blocks": {}
+        },
+        "group_dddxG7": {
+          "type": "group",
+          "name": "t:icons_and_text_column",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "wrap_in_card": true,
+            "color_scheme": "scheme-2",
+            "show_card_border": false,
+            "layout_type": "flex",
+            "width_desktop": 100,
+            "layout_direction_desktop": "row",
+            "layout_grid_columns_desktop": 3,
+            "layout_gap_desktop": 10,
+            "layout_wrap_desktop": "nowrap",
+            "layout_justify_desktop": "space-around",
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": true,
+            "width_mobile": 100,
+            "layout_direction_mobile": "column",
+            "layout_grid_columns_mobile": 1,
+            "layout_gap_mobile": 10,
+            "layout_wrap_mobile": "nowrap",
+            "layout_justify_mobile": "flex-start",
+            "layout_align_items_mobile": "flex-start",
+            "use_global_container_padding": true,
+            "padding_horizontal": 30,
+            "padding_vertical": 30,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {
+            "icon_with_text_DWkBqr": {
+              "type": "icon-with-text",
+              "name": "t:icon_with_text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "icon_type": "icon",
+                "icon": "delivery_truck_speed",
+                "icon_custom": "",
+                "icon_size": 32,
+                "icon_position": "start",
+                "text": "<p><strong>Expédié sous 3 jours</strong><br/>Fabriqué à la commande</p>",
+                "text_style": "paragraph",
+                "font_weight": 500,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "icon_with_text_LqjaQL": {
+              "type": "icon-with-text",
+              "name": "t:icon_with_text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "icon_type": "icon",
+                "icon": "encrypted",
+                "icon_custom": "",
+                "icon_size": 32,
+                "icon_position": "start",
+                "text": "<p><strong>Paiement sécurisé</strong><br/>Via PayPal</p>",
+                "text_style": "paragraph",
+                "font_weight": 500,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "icon_with_text_Y6hka8": {
+              "type": "icon-with-text",
+              "name": "t:icon_with_text",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "icon_type": "icon",
+                "icon": "factory",
+                "icon_custom": "",
+                "icon_size": 32,
+                "icon_position": "start",
+                "text": "<p><strong>Fabriqué en France</strong><br/>PETG · ABS · ASA</p>",
+                "text_style": "paragraph",
+                "font_weight": 500,
+                "margin_top": 0,
+                "margin_bottom": 0,
+                "additional_class": ""
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_with_text_DWkBqr",
+            "icon_with_text_LqjaQL",
+            "icon_with_text_Y6hka8"
+          ]
         },
         "accordions_KKUaHK": {
           "type": "accordions",
@@ -376,116 +469,23 @@
             "accordion_mEqYBU"
           ]
         },
-        "group_dddxG7": {
-          "type": "group",
-          "name": "t:icons_and_text_column",
+        "rating_stars_Krck47": {
+          "type": "rating-stars",
+          "name": "t:rating_stars",
           "settings": {
             "show_on_display": "desktop_and_mobile",
-            "wrap_in_card": true,
-            "color_scheme": "scheme-2",
-            "show_card_border": false,
-            "layout_type": "flex",
-            "width_desktop": 100,
-            "layout_direction_desktop": "row",
-            "layout_grid_columns_desktop": 3,
-            "layout_gap_desktop": 10,
-            "layout_wrap_desktop": "nowrap",
-            "layout_justify_desktop": "space-around",
-            "layout_align_items_desktop": "center",
-            "same_as_desktop": true,
-            "width_mobile": 100,
-            "layout_direction_mobile": "column",
-            "layout_grid_columns_mobile": 1,
-            "layout_gap_mobile": 10,
-            "layout_wrap_mobile": "nowrap",
-            "layout_justify_mobile": "flex-start",
-            "layout_align_items_mobile": "flex-start",
-            "use_global_container_padding": true,
-            "padding_horizontal": 30,
-            "padding_vertical": 30,
-            "margin_top": 0,
+            "product": "{{ closest.product }}",
+            "hide_rating_when_no_reviews": true,
+            "rating": 4.5,
+            "show_note": true,
+            "show_review_count": true,
+            "review_count": 123,
+            "link": "#reviews",
+            "margin_top": 10,
             "margin_bottom": 0,
             "additional_class": ""
           },
-          "blocks": {
-            "icon_with_text_DWkBqr": {
-              "type": "icon-with-text",
-              "name": "t:icon_with_text",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "layout_direction_desktop": "column",
-                "layout_gap_desktop": 5,
-                "same_as_desktop": true,
-                "layout_direction_mobile": "column",
-                "layout_gap_mobile": 10,
-                "icon_type": "icon",
-                "icon": "delivery_truck_speed",
-                "icon_custom": "",
-                "icon_size": 32,
-                "icon_position": "start",
-                "text": "<p><strong>Expédié sous 3 jours</strong><br/>Fabriqué à la commande</p>",
-                "text_style": "paragraph",
-                "font_weight": 500,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
-            },
-            "icon_with_text_LqjaQL": {
-              "type": "icon-with-text",
-              "name": "t:icon_with_text",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "layout_direction_desktop": "column",
-                "layout_gap_desktop": 5,
-                "same_as_desktop": true,
-                "layout_direction_mobile": "column",
-                "layout_gap_mobile": 10,
-                "icon_type": "icon",
-                "icon": "encrypted",
-                "icon_custom": "",
-                "icon_size": 32,
-                "icon_position": "start",
-                "text": "<p><strong>Paiement sécurisé</strong><br/>Via PayPal</p>",
-                "text_style": "paragraph",
-                "font_weight": 500,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
-            },
-            "icon_with_text_Y6hka8": {
-              "type": "icon-with-text",
-              "name": "t:icon_with_text",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "layout_direction_desktop": "column",
-                "layout_gap_desktop": 5,
-                "same_as_desktop": true,
-                "layout_direction_mobile": "column",
-                "layout_gap_mobile": 10,
-                "icon_type": "icon",
-                "icon": "factory",
-                "icon_custom": "",
-                "icon_size": 32,
-                "icon_position": "start",
-                "text": "<p><strong>Fabriqué en France</strong><br/>PETG · ABS · ASA</p>",
-                "text_style": "paragraph",
-                "font_weight": 500,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "icon_with_text_DWkBqr",
-            "icon_with_text_LqjaQL",
-            "icon_with_text_Y6hka8"
-          ]
+          "blocks": {}
         },
         "product_media_gallery": {
           "type": "_product-media-gallery",
@@ -535,6 +535,46 @@
         "margin_top": 0,
         "margin_bottom": 0
       }
+    },
+    "1775671526d6323905": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_cards_carousel_MEYzmB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "show_sample_reviews": true,
+            "reviews_selection": "all",
+            "products": [],
+            "star_rating": "all",
+            "show_review_media": true,
+            "display_order": "media_first",
+            "no_image_fallback": "review_text_only",
+            "max_reviews": 20,
+            "review_length": "medium",
+            "text_size": "medium",
+            "image_ratio": "1",
+            "reviews_shown": 4,
+            "show_reviewer_name": true,
+            "show_product_name": true,
+            "hide_arrows_mobile": true,
+            "arrows_position": "sides",
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "header_text_color": "#000000",
+            "text_color": "#000000",
+            "card_color": "#F9F9F9",
+            "stars_color": "",
+            "arrows_color": "#000000",
+            "transition_speed": 5,
+            "header_text": "Customers are saying",
+            "show_average_rating": true
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_cards_carousel_MEYzmB"
+      ],
+      "settings": {}
     },
     "custom_section_HfqtB3": {
       "type": "custom-section",
@@ -662,6 +702,7 @@
         "image_QQNAyM",
         "group_hFEX9q"
       ],
+      "disabled": true,
       "name": "t:image_with_text",
       "settings": {
         "show_on_display": "none",
@@ -816,6 +857,7 @@
         "group_U3gXVj",
         "image_NRLtBA"
       ],
+      "disabled": true,
       "name": "t:video_with_text",
       "settings": {
         "show_on_display": "none",
@@ -1017,6 +1059,7 @@
         "review_kFzBM6",
         "review_Hi9gwT"
       ],
+      "disabled": true,
       "name": "t:reviews_grid",
       "settings": {
         "show_on_display": "desktop_and_mobile",
@@ -1596,6 +1639,7 @@
   },
   "order": [
     "main",
+    "1775671526d6323905",
     "custom_section_HfqtB3",
     "custom_section_iEjmyJ",
     "reviews_8P6xW3",

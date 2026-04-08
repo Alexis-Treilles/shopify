@@ -78,8 +78,8 @@
     "show_shopify_pay": true,
     "show_twint": false,
     "show_bancontact": false,
-    "instagram_url": "https://www.instagram.com/rocaraid/",
     "facebook_url": "https://www.facebook.com/rocaraid",
+    "instagram_url": "https://www.instagram.com/rocaraid/",
     "tiktok_url": "https://www.tiktok.com/@rocaraid",
     "klaviyo_enabled": true,
     "klaviyo_api_key": "pk_ec8555b6fd18602d0c6047aa4b4e181bf7",
@@ -113,6 +113,13 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
