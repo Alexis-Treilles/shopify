@@ -53,6 +53,10 @@
           "name": "t:product_form",
           "settings": {},
           "blocks": {
+            "judge_me_reviews_preview_badge_Nq3gPJ": {
+              "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+              "settings": {}
+            },
             "product_variant_picker_xWC3wF": {
               "type": "_product-variant-picker",
               "name": "t:product_variant_picker",
@@ -209,6 +213,7 @@
             }
           },
           "block_order": [
+            "judge_me_reviews_preview_badge_Nq3gPJ",
             "product_variant_picker_xWC3wF",
             "text_yQdqF8"
           ]
