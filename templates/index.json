@@ -685,10 +685,10 @@
         "additional_class": ""
       }
     },
-    "collection_featured_moto": {
+    "collection_featured_UNTNHH": {
       "type": "collection-featured",
       "blocks": {
-        "group_moto_header": {
+        "group_zdQJNW": {
           "type": "group",
           "name": "t:group",
           "settings": {
@@ -720,7 +720,7 @@
             "additional_class": ""
           },
           "blocks": {
-            "group_moto_title": {
+            "group_7Are4t": {
               "type": "group",
               "name": "Groupe titre",
               "settings": {
@@ -752,7 +752,7 @@
                 "additional_class": ""
               },
               "blocks": {
-                "text_moto_title": {
+                "text_bBfCPk": {
                   "type": "text",
                   "name": "t:title",
                   "settings": {
@@ -775,7 +775,7 @@
                   },
                   "blocks": {}
                 },
-                "text_moto_desc": {
+                "text_kjKeCp": {
                   "type": "text",
                   "name": "t:text",
                   "settings": {
@@ -800,11 +800,11 @@
                 }
               },
               "block_order": [
-                "text_moto_title",
-                "text_moto_desc"
+                "text_bBfCPk",
+                "text_kjKeCp"
               ]
             },
-            "button_moto": {
+            "button_wHQyCq": {
               "type": "button",
               "name": "t:button",
               "settings": {
@@ -825,8 +825,8 @@
             }
           },
           "block_order": [
-            "group_moto_title",
-            "button_moto"
+            "group_7Are4t",
+            "button_wHQyCq"
           ]
         },
         "product-card": {
@@ -837,16 +837,130 @@
             "color_scheme": "",
             "layout_gap": 10
           },
-          "blocks": {}
+          "blocks": {
+            "product_card_media_gallery_qGCRKF": {
+              "type": "_product-card-media-gallery",
+              "name": "t:product_card_gallery",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "show_slider": true,
+                "media_rounded": true,
+                "show_badges": true,
+                "media_ratio": "1 / 1",
+                "additional_class": ""
+              },
+              "blocks": {}
+            },
+            "product_card_group_BiMhEc": {
+              "type": "_product-card-group",
+              "name": "t:group",
+              "settings": {
+                "show_on_display": "desktop_and_mobile",
+                "wrap_in_card": false,
+                "color_scheme": "scheme-3",
+                "layout_direction_desktop": "column",
+                "layout_gap_desktop": 5,
+                "layout_wrap_desktop": "nowrap",
+                "layout_justify_desktop": "flex-start",
+                "layout_align_items_desktop": "flex-start",
+                "same_as_desktop": true,
+                "layout_direction_mobile": "column",
+                "layout_gap_mobile": 10,
+                "layout_wrap_mobile": "nowrap",
+                "layout_justify_mobile": "flex-start",
+                "layout_align_items_mobile": "flex-start",
+                "margin_top": 10,
+                "margin_bottom": 10,
+                "additional_class": ""
+              },
+              "blocks": {
+                "text_RN6pK4": {
+                  "type": "text",
+                  "name": "t:text",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "text": "<h2>{{ closest.product.title }}</h2>",
+                    "text_style": "paragraph",
+                    "paragraph_font_size": "normal",
+                    "font_weight": 500,
+                    "alignment": "left",
+                    "alignment_mobile": "left",
+                    "show_read_more": false,
+                    "read_more_length": 200,
+                    "read_more_text": "Voir plus",
+                    "read_less_text": "Voir moins",
+                    "truncate": false,
+                    "truncate_length": 2,
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "product_price_zVgcEi": {
+                  "type": "product-price",
+                  "name": "t:product_price",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "sales_badge": "amount",
+                    "show_sales_badge_text": false,
+                    "text_style": "paragraph",
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "rating_stars_mEPhBB": {
+                  "type": "rating-stars",
+                  "name": "t:rating_stars",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "product": "{{ closest.product }}",
+                    "hide_rating_when_no_reviews": false,
+                    "rating": 4.5,
+                    "show_note": true,
+                    "show_review_count": true,
+                    "review_count": 123,
+                    "link": "",
+                    "margin_top": 0,
+                    "margin_bottom": 0,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                },
+                "product_card_swatches_wgLJnR": {
+                  "type": "_product-card-swatches",
+                  "name": "t:swatches",
+                  "settings": {
+                    "show_on_display": "desktop_and_mobile",
+                    "swatches_size": "small",
+                    "swatches_rounded": true,
+                    "additional_class": ""
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_RN6pK4",
+                "product_price_zVgcEi",
+                "rating_stars_mEPhBB",
+                "product_card_swatches_wgLJnR"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_media_gallery_qGCRKF",
+            "product_card_group_BiMhEc"
+          ]
         }
       },
       "block_order": [
-        "group_moto_header"
+        "group_zdQJNW"
       ],
-      "name": "Accessoires Moto",
+      "name": "t:collection_featured",
       "settings": {
-        "show_on_display": "none",
-        "collection": "pour-moto",
+        "show_on_display": "desktop_and_mobile",
+        "collection": "pour-la-4l",
         "max_products": 8,
         "color_scheme": "",
         "layout_type": "slider",
@@ -2029,7 +2143,7 @@
   "order": [
     "image_banner_VXNP89",
     "collection_featured_JXRpw3",
-    "collection_featured_moto",
+    "collection_featured_UNTNHH",
     "custom_section_wxUWmx",
     "custom_section_k9aPjP",
     "custom_section_NkHGLz",
