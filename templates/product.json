@@ -142,29 +142,6 @@
               },
               "block_order": []
             },
-            "text_yQdqF8": {
-              "type": "text",
-              "name": "t:text",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "text": "{{ closest.product.description }}",
-                "text_style": "paragraph",
-                "paragraph_font_size": "normal",
-                "font_weight": 400,
-                "alignment": "left",
-                "alignment_mobile": "left",
-                "show_read_more": false,
-                "read_more_length": 50,
-                "read_more_text": "Voir plus",
-                "read_less_text": "Voir moins",
-                "truncate": false,
-                "truncate_length": 10,
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
-            },
             "product-add-to-cart-button": {
               "type": "_product-add-to-cart-button",
               "static": true,
@@ -214,8 +191,7 @@
           },
           "block_order": [
             "judge_me_reviews_preview_badge_Nq3gPJ",
-            "product_variant_picker_xWC3wF",
-            "text_yQdqF8"
+            "product_variant_picker_xWC3wF"
           ]
         },
         "payment_methods_BdjpFB": {
@@ -342,6 +318,29 @@
             "icon_with_text_LqjaQL",
             "icon_with_text_Y6hka8"
           ]
+        },
+        "text_7RTbn4": {
+          "type": "text",
+          "name": "t:text",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "{{ closest.product.description }}",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 50,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 10,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
         },
         "accordions_KKUaHK": {
           "type": "accordions",
@@ -522,6 +521,7 @@
         "product_form_grYQk6",
         "payment_methods_BdjpFB",
         "group_dddxG7",
+        "text_7RTbn4",
         "accordions_KKUaHK",
         "rating_stars_Krck47"
       ],
