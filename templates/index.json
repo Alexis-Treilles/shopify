@@ -102,7 +102,7 @@
                       "type": "rating-stars",
                       "name": "t:rating_stars",
                       "settings": {
-                        "show_on_display": "desktop_and_mobile",
+                        "show_on_display": "none",
                         "product": "",
                         "hide_rating_when_no_reviews": true,
                         "rating": 4.5,
@@ -121,7 +121,7 @@
                       "name": "t:text",
                       "settings": {
                         "show_on_display": "desktop_only",
-                        "text": "<p>80+ pièces vendues · Éprouvé au 4L Trophy 2026</p>",
+                        "text": "<p>🏁 Éprouvé au 4L Trophy 2026 · 🇫🇷 Fabriqué en France · 🔧 80+ commandes</p>",
                         "text_style": "paragraph",
                         "paragraph_font_size": "normal",
                         "font_weight": 400,
@@ -486,7 +486,7 @@
                   "name": "t:text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Pièces plastiques de re fabrication ou sur mesure remises à disposition. Compatibles d'origine, fabriquées en France.</p>",
+                    "text": "<p>Pièces refabriquées à l'identique ou créées sur mesure, compatibles d'origine — introuvables ailleurs.</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -844,7 +844,7 @@
       ],
       "name": "Accessoires Moto",
       "settings": {
-        "show_on_display": "desktop_and_mobile",
+        "show_on_display": "none",
         "collection": "pour-la-moto",
         "max_products": 8,
         "color_scheme": "",
@@ -1046,7 +1046,7 @@
               "name": "t:title",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<h2> compatibilité, Made in France<br/>à la demande</h2>",
+                "text": "<h2>Compatibilité garantie, Made in France à la demande</h2>",
                 "text_style": "h3",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
@@ -1421,7 +1421,7 @@
                   "name": "t:text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Ventes réalisées à ce jour</p>",
+                    "text": "<p>Commandes livrées</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 500,
@@ -1482,7 +1482,7 @@
                   "name": "t:title",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>4L Trophy</p>",
+                    "text": "<p>50</p>",
                     "text_style": "h2",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -1505,7 +1505,7 @@
                   "name": "t:text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Éprouvé au 4L Trophy 2026</p>",
+                    "text": "<p>Voitures équipées au 4L Trophy 2026</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 500,
@@ -1566,7 +1566,7 @@
                   "name": "t:title",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Sur mesure</p>",
+                    "text": "<p>48h</p>",
                     "text_style": "h2",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -1589,7 +1589,7 @@
                   "name": "t:text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Demande de fabrication de pièces sur mesure</p>",
+                    "text": "<p>Délai de réponse pour une demande sur mesure</p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 500,
