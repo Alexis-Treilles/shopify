@@ -1,11 +1,11 @@
-/* 
- * -----------------------------------------------------------
+/*
+ * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
  *
  * This file may be updated by the Shopify admin theme editor
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
- * -----------------------------------------------------------
+ * ------------------------------------------------------------
  */
 {
   "sections": {
@@ -262,7 +262,8 @@
                         "margin_top": 8,
                         "margin_bottom": 0,
                         "additional_class": ""
-                      }
+                      },
+                      "blocks": {}
                     }
                   },
                   "block_order": [
@@ -845,7 +846,7 @@
       "name": "Accessoires Moto",
       "settings": {
         "show_on_display": "none",
-        "collection": "pour-la-moto",
+        "collection": "pour-moto",
         "max_products": 8,
         "color_scheme": "",
         "layout_type": "slider",
