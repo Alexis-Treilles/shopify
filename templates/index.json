@@ -960,7 +960,7 @@
       "name": "t:collection_featured",
       "settings": {
         "show_on_display": "desktop_and_mobile",
-        "collection": "pour-la-moto",
+        "collection": "pour-moto",
         "max_products": 8,
         "color_scheme": "",
         "layout_type": "slider",
