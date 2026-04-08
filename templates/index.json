@@ -1359,13 +1359,14 @@
           "settings": {
             "show_on_display": "desktop_and_mobile",
             "source": "uploaded",
+            "video": "shopify://files/videos/PXL_20251218_150057982.LS.mp4",
             "video_url": "",
             "video_autoplay": false,
             "enable_video_controls": true,
             "video_loop": true,
             "alt": "",
-            "custom_width": 100,
-            "custom_width_mobile": 100,
+            "custom_width": 29,
+            "custom_width_mobile": 37,
             "aspect_ratio": "16/9",
             "additional_class": ""
           },
