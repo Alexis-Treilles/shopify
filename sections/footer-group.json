@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "footer",
   "name": "t:footer",
@@ -474,6 +483,7 @@
                 "show_on_display": "desktop_and_mobile",
                 "logo_height": 32,
                 "inverse": true,
+                "activate_link": true,
                 "margin_top": 0,
                 "margin_bottom": 0,
                 "additional_class": ""
@@ -731,10 +741,24 @@
         "padding_bottom": 0,
         "margin_top": 0
       }
+    },
+    "177575940605c9ed22": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_FEmbjw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_FEmbjw"
+      ],
+      "settings": {}
     }
   },
   "order": [
     "custom_section_k6mNHc",
-    "footer"
+    "footer",
+    "177575940605c9ed22"
   ]
 }
