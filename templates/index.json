@@ -126,7 +126,7 @@
                       "name": "t:text",
                       "settings": {
                         "show_on_display": "desktop_only",
-                        "text": "<p>🏁 Éprouvé au 4L Trophy 2026 · 🇫🇷 Fabriqué en France · 🔧 80+ commandes</p>",
+                        "text": "<p>🏁 Éprouvé au 4L Trophy 2026 ·  🔧 80+ commandes</p>",
                         "text_style": "paragraph",
                         "paragraph_font_size": "normal",
                         "font_weight": 400,
