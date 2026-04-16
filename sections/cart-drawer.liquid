@@ -199,6 +199,12 @@
     <div class="cart-drawer__footer color-{{ section.settings.color_scheme_footer }}">
       {% content_for 'block', type: '_cart-footer-resume-blocks', id: 'cart_footer_resume_blocks' %}
 
+      <div class="rocaraid-livraison-drawer">
+        <p>📦 Point Relais Mondial Relay — 4,00 € &nbsp;·&nbsp; <strong>Gratuite dès 30 €</strong></p>
+        <p>🏠 Colissimo à domicile — 7,50 € &nbsp;·&nbsp; Gratuite dès 45 €</p>
+        <p><small>France · Belgique · Espagne · Suisse</small></p>
+      </div>
+
       <div class="cart-drawer__ctas">
         <button
           type="submit"
@@ -229,6 +235,18 @@
 </cart-drawer>
 
 {% stylesheet %}
+  .rocaraid-livraison-drawer {
+    padding: 10px 0 6px;
+    border-top: 1px solid rgba(var(--color-foreground), 0.1);
+    margin-bottom: 8px;
+  }
+
+  .rocaraid-livraison-drawer p {
+    margin: 2px 0;
+    font-size: var(--font-body--size-small);
+    line-height: 1.5;
+  }
+
   :root {
     --cart-item-image-width: 80px;
   }
