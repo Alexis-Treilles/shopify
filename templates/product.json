@@ -519,7 +519,7 @@
           "name": "t:text",
           "settings": {
             "show_on_display": "desktop_and_mobile",
-            "text": "<p><strong>🚚 Livraison</strong> — France · Belgique · Espagne · Suisse</p><p>📦 Point Relais Mondial Relay — <strong>4,00 €</strong> &nbsp;<strong style=\"color:green\">✓ Offerte dès 30 €</strong></p><p>🏠 Colissimo à domicile — <strong>7,50 €</strong> &nbsp;<strong style=\"color:green\">✓ Offerte dès 45 €</strong></p>",
+            "text": "<h4>📦 Livraison Point Relais — Gratuite dès 30 €</h4><p>Mondial Relay 4,00 € &nbsp;·&nbsp; Colissimo à domicile 7,50 € <em>(gratuite dès 45 €)</em></p><p>France · Belgique · Espagne · Suisse</p>",
             "text_style": "paragraph",
             "paragraph_font_size": "normal",
             "font_weight": 400,
