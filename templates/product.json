@@ -279,7 +279,7 @@
                 "icon_custom": "",
                 "icon_size": 32,
                 "icon_position": "start",
-                "text": "<p><strong>Paiement sécurisé</strong><br/>Via PayPal</p>",
+                "text": "<p><strong>Paiement sécurisé</strong><br/>CB, PayPal, Apple Pay</p>",
                 "text_style": "paragraph",
                 "font_weight": 500,
                 "margin_top": 0,
@@ -513,12 +513,35 @@
             "additional_class": ""
           },
           "blocks": {}
+        },
+        "text_livraison": {
+          "type": "text",
+          "name": "t:text",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p>🚚 <strong>Livraison en France</strong><br/>📦 Point Relais Mondial Relay — <strong>4,00 €</strong> <em>(offerte dès 30 €)</em><br/>🏠 Colissimo à domicile — <strong>7,50 €</strong> <em>(offerte dès 45 €)</em></p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 200,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 10,
+            "margin_bottom": 0,
+            "additional_class": "rocaraid-livraison-info"
+          }
         }
       },
       "block_order": [
         "text_zLqMQw",
         "price_yEeMeb",
         "product_form_grYQk6",
+        "text_livraison",
         "payment_methods_BdjpFB",
         "group_dddxG7",
         "text_7RTbn4",

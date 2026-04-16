@@ -36,12 +36,65 @@
 {% endif %}
 
 {%- if request.page_type == 'product' -%}
+  {%- liquid
+    assign jm_rating = product.metafields.judgeme.all_reviews_rating.value | default: 4.71
+    assign jm_count = product.metafields.judgeme.reviews_count.value | default: 7
+    assign product_url = request.origin | append: product.url
+    assign product_image_url = ''
+    if product.featured_image
+      assign product_image_url = product.featured_image | image_url: width: 1200
+      assign product_image_url = 'https:' | append: product_image_url
+    endif
+  -%}
   <script type="application/ld+json">
-    {{ product | structured_data }}
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": {{ product.title | json }},
+    "description": {{ product.description | strip_html | truncate: 500 | json }},
+    "url": {{ product_url | json }},
+    "image": {{ product_image_url | json }},
+    "brand": {
+      "@type": "Brand",
+      "name": "Rocaraid"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": {{ product_url | json }},
+      "priceCurrency": "EUR",
+      "price": {{ product.price | divided_by: 100.0 | json }},
+      "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+      "seller": {
+        "@type": "Organization",
+        "name": "Rocaraid"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "4.00",
+          "currency": "EUR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "FR"
+        }
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": {{ jm_rating | json }},
+      "reviewCount": {{ jm_count | json }},
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
   </script>
 
   <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
   <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
+  <meta property="product:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+  <meta property="product:price:currency" content="{{ cart.currency.iso_code }}">
 {%- endif -%}
 
 {%- if request.page_type == 'article' -%}
