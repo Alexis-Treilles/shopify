@@ -87,7 +87,7 @@
               "name": "t:text",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<p>2-3J via Colissimo · 4-6J via Mondial Relais</p>",
+                "text": "<p>France · Belgique · Espagne · Suisse<br/>Colissimo 2-3J · Mondial Relay 4-6J<br/><strong>✓ Offerte dès 30 € (Relay) / 45 € (Colissimo)</strong></p>",
                 "text_style": "paragraph",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
