@@ -98,10 +98,6 @@
                     "additional_class": ""
                   },
                   "blocks": {
-                    "judge_me_reviews_medals_qYe87J": {
-                      "type": "shopify://apps/judge-me-reviews/blocks/medals/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-                      "settings": {}
-                    },
                     "rating_stars_z9LL3m": {
                       "type": "rating-stars",
                       "name": "t:rating_stars",
@@ -146,7 +142,6 @@
                     }
                   },
                   "block_order": [
-                    "judge_me_reviews_medals_qYe87J",
                     "rating_stars_z9LL3m",
                     "text_mLtNpU"
                   ]
