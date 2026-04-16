@@ -194,6 +194,29 @@
             "product_variant_picker_xWC3wF"
           ]
         },
+        "text_livraison": {
+          "type": "text",
+          "name": "t:text",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "text": "<p><strong>🚚 Livraison</strong> — France · Belgique · Espagne · Suisse</p><p>📦 Point Relais — <strong>4,00 €</strong>  <strong>✓ Offerte dès 30 €</strong></p><p>🏠 Colissimo — <strong>7,50 €</strong>  <strong>✓ Offerte dès 45 €</strong></p>",
+            "text_style": "paragraph",
+            "paragraph_font_size": "normal",
+            "font_weight": 400,
+            "alignment": "left",
+            "alignment_mobile": "left",
+            "show_read_more": false,
+            "read_more_length": 200,
+            "read_more_text": "Voir plus",
+            "read_less_text": "Voir moins",
+            "truncate": false,
+            "truncate_length": 2,
+            "margin_top": 10,
+            "margin_bottom": 0,
+            "additional_class": "rocaraid-livraison-info"
+          },
+          "blocks": {}
+        },
         "payment_methods_BdjpFB": {
           "type": "payment-methods",
           "name": "t:payment_methods",
@@ -513,28 +536,6 @@
             "additional_class": ""
           },
           "blocks": {}
-        },
-        "text_livraison": {
-          "type": "text",
-          "name": "t:text",
-          "settings": {
-            "show_on_display": "desktop_and_mobile",
-            "text": "<p>📦 Point Relais Mondial Relay — 4,00 € &nbsp;·&nbsp; <strong>Gratuite dès 30 €</strong><br/>🏠 Colissimo à domicile — 7,50 € &nbsp;·&nbsp; Gratuite dès 45 €<br/><small>France · Belgique · Espagne · Suisse</small></p>",
-            "text_style": "paragraph",
-            "paragraph_font_size": "normal",
-            "font_weight": 400,
-            "alignment": "left",
-            "alignment_mobile": "left",
-            "show_read_more": false,
-            "read_more_length": 200,
-            "read_more_text": "Voir plus",
-            "read_less_text": "Voir moins",
-            "truncate": false,
-            "truncate_length": 2,
-            "margin_top": 10,
-            "margin_bottom": 0,
-            "additional_class": "rocaraid-livraison-info"
-          }
         }
       },
       "block_order": [
