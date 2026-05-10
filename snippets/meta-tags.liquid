@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 {%- liquid
-  assign rocaraid_default_description = "Rocaraid — Pièces plastiques rares et accessoires fabriqués en France pour Renault 4L, R5, R6 et motos. Compatibilité garantie, expédié sous 3 jours."
+  assign camaraid_default_description = "Camaraid — Pièces plastiques rares et accessoires fabriqués en France pour Renault 4L, R5, R6 et motos. Compatibilité garantie, expédié sous 3 jours."
   assign og_title = page_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: rocaraid_default_description
+  assign og_description = page_description | default: shop.description | default: camaraid_default_description
 
   if request.page_type == 'product'
     assign og_type = 'product'
@@ -56,7 +56,7 @@
     "image": {{ product_image_url | json }},
     "brand": {
       "@type": "Brand",
-      "name": "Rocaraid"
+      "name": "Camaraid"
     },
     "offers": {
       "@type": "Offer",
@@ -66,7 +66,7 @@
       "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
       "seller": {
         "@type": "Organization",
-        "name": "Rocaraid"
+        "name": "Camaraid"
       },
       "shippingDetails": {
         "@type": "OfferShippingDetails",

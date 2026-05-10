@@ -213,7 +213,7 @@
             "truncate_length": 2,
             "margin_top": 10,
             "margin_bottom": 0,
-            "additional_class": "rocaraid-livraison-info"
+            "additional_class": "camaraid-livraison-info"
           },
           "blocks": {}
         },

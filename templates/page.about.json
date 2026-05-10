@@ -55,7 +55,7 @@
               "type": "text",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<h1>Rocaraid — Des pièces introuvables, fabriquées en France</h1>",
+                "text": "<h1>Camaraid — Des pièces introuvables, fabriquées en France</h1>",
                 "text_style": "h2",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
@@ -161,7 +161,7 @@
               "type": "text",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<p>Pourquoi Rocaraid ?</p>",
+                "text": "<p>Pourquoi Camaraid ?</p>",
                 "text_style": "paragraph",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
@@ -193,7 +193,7 @@
               "type": "text",
               "settings": {
                 "show_on_display": "desktop_and_mobile",
-                "text": "<p>Tout a commencé avec une Renault 4L et une pièce plastique cassée, introuvable dans le commerce. Plutôt que de laisser le véhicule à l'arrêt, on l'a refabriquée.</p><p>De fil en aiguille, d'autres passionnés ont eu le même problème. C'est comme ça que <strong>Rocaraid</strong> est né : une marque française qui conçoit et fabrique des pièces rares, des pièces de refabrication, et des accessoires sur mesure — pour que vos véhicules continuent de rouler.</p><p>Aujourd'hui on s'adresse aux propriétaires de <strong>Renault 4L, R5, R6</strong> et aux motards qui cherchent des accessoires pratiques comme les <strong>supports Carpuride</strong>. Demain, à bien d'autres encore.</p>",
+                "text": "<p>Tout a commencé avec une Renault 4L et une pièce plastique cassée, introuvable dans le commerce. Plutôt que de laisser le véhicule à l'arrêt, on l'a refabriquée.</p><p>De fil en aiguille, d'autres passionnés ont eu le même problème. C'est comme ça que <strong>Camaraid</strong> est né : une marque française qui conçoit et fabrique des pièces rares, des pièces de refabrication, et des accessoires sur mesure — pour que vos véhicules continuent de rouler.</p><p>Aujourd'hui on s'adresse aux propriétaires de <strong>Renault 4L, R5, R6</strong> et aux motards qui cherchent des accessoires pratiques comme les <strong>supports Carpuride</strong>. Demain, à bien d'autres encore.</p>",
                 "text_style": "paragraph",
                 "paragraph_font_size": "normal",
                 "font_weight": 400,
