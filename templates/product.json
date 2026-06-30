@@ -199,7 +199,7 @@
           "name": "t:text",
           "settings": {
             "show_on_display": "desktop_and_mobile",
-            "text": "<p><strong>🚚 Livraison</strong> — France · Belgique · Espagne · Suisse</p><p>📦 Point Relais — <strong>4,00 €</strong>  <strong>✓ Offerte dès 30 €</strong></p><p>🏠 Colissimo — <strong>7,50 €</strong>  <strong>✓ Offerte dès 45 €</strong></p>",
+            "text": "<p><strong>🚚 Livraison</strong> — France · Belgique · Espagne · Suisse</p><p>📦 Point Relais — <strong>3,50 €</strong>  <strong>✓ Offerte dès 30 €</strong></p><p>🏠 Colissimo — <strong>7,50 €</strong>  <strong>✓ Offerte dès 45 €</strong></p>",
             "text_style": "paragraph",
             "paragraph_font_size": "normal",
             "font_weight": 400,
@@ -596,7 +596,8 @@
             "arrows_color": "#000000",
             "transition_speed": 5,
             "header_text": "Avis clients",
-            "show_average_rating": true
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
