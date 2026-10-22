@@ -209,7 +209,7 @@
       },
       "settings": {
         "color_scheme": "scheme-1",
-        "header_layout": "logo_center",
+        "header_layout": "logo_left",
         "header_height": 80,
         "sticky_header": true,
         "transparent_header": false,
