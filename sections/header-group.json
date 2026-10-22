@@ -210,7 +210,7 @@
       "settings": {
         "color_scheme": "scheme-1",
         "header_layout": "logo_center",
-        "header_height": 65,
+        "header_height": 80,
         "sticky_header": true,
         "transparent_header": false,
         "transparent_header_color_scheme": "scheme-3",
