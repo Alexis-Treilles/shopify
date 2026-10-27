@@ -216,7 +216,7 @@
         "transparent_header_color_scheme": "scheme-3",
         "use_inverse_logo": false,
         "logo_height": 50,
-        "logo_height_mobile": 20,
+        "logo_height_mobile": 50,
         "header_menu_style": "dropdown",
         "menu_font_weight": 400,
         "uppercase_menu_items": false,
