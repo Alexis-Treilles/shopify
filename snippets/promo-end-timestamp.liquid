@@ -1,0 +1,21 @@
+{%- doc -%}
+  Convertit une date de fin "JJ/MM/AAAA HH:MM" (heure de la boutique) en timestamp Unix (secondes).
+  Renvoie 0 si la date est vide ou mal formée.
+
+  @param {string} date - Date de fin au format JJ/MM/AAAA HH:MM
+
+  @example
+  {% capture end_ts %}{% render 'promo-end-timestamp', date: section.settings.date_end %}{% endcapture %}
+{%- enddoc -%}
+{%- liquid
+  assign promo_ts = 0
+  assign promo_raw = date | strip
+  assign promo_parts = promo_raw | split: ' '
+  assign promo_day_parts = promo_parts[0] | split: '/'
+  if promo_day_parts.size == 3 and promo_parts[1] != blank
+    assign promo_offset = 'now' | date: '%z'
+    assign promo_iso = promo_day_parts[2] | append: '-' | append: promo_day_parts[1] | append: '-' | append: promo_day_parts[0] | append: 'T' | append: promo_parts[1] | append: ':59' | append: promo_offset
+    assign promo_ts = promo_iso | date: '%s' | plus: 0
+  endif
+  echo promo_ts
+-%}
