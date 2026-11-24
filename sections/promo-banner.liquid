@@ -1,0 +1,252 @@
+{%- capture promo_end_ts -%}{%- render 'promo-end-timestamp', date: section.settings.date_end -%}{%- endcapture -%}
+{%- liquid
+  assign promo_end_ts = promo_end_ts | strip | plus: 0
+  assign promo_now_ts = 'now' | date: '%s' | plus: 0
+  assign promo_expired = false
+  if promo_end_ts > 0 and promo_now_ts > promo_end_ts
+    assign promo_expired = true
+  endif
+-%}
+
+{%- if promo_expired == false or request.design_mode -%}
+  <div
+    class="
+      promo-banner color-{{ section.settings.color_scheme }}
+      {%- if section.settings.show_on_display == 'desktop_only' %} mobile-hide{% endif -%}
+      {%- if section.settings.show_on_display == 'mobile_only' %} desktop-hide{% endif -%}
+      {%- if section.settings.additional_class != blank %} {{ section.settings.additional_class }}{% endif -%}
+    "
+    style="
+      --promo-padding-top: {{ section.settings.padding_top }}px;
+      --promo-padding-bottom: {{ section.settings.padding_bottom }}px;
+    "
+    data-promo-end="{{ promo_end_ts }}"
+    {% if request.design_mode %}data-promo-preview{% endif %}
+  >
+    {%- if promo_expired and request.design_mode -%}
+      <p class="promo-banner__expired-note">
+        Offre terminée : cette bannière est masquée pour les visiteurs. Supprimez la section ou changez la date de fin.
+      </p>
+    {%- endif -%}
+    <div class="page-width promo-banner__inner">
+      {% content_for 'blocks' %}
+    </div>
+    <script>
+      (() => {
+        const el = document.currentScript.parentElement;
+        const end = Number(el.dataset.promoEnd);
+        const check = () => { if (end > 0 && Date.now() / 1000 > end && !el.hasAttribute('data-promo-preview')) el.remove(); };
+        check();
+        setInterval(check, 30000);
+      })();
+    </script>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .section-promo-banner {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .promo-banner {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    padding-top: var(--promo-padding-top);
+    padding-bottom: var(--promo-padding-bottom);
+  }
+
+  .promo-banner__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-md, 20px);
+  }
+
+  @media (width > 750px) {
+    .promo-banner__inner {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .promo-banner__expired-note {
+    margin: 0;
+    padding: 8px 16px;
+    font-size: 13px;
+    text-align: center;
+    background: #b00020;
+    color: #fff;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Bannière promo programmée",
+  "class": "section-promo-banner",
+  "disabled_on": {
+    "groups": [
+      "header",
+      "footer",
+      "custom.cart_drawer",
+      "custom.breadcrumbs"
+    ]
+  },
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "show_on_display",
+      "label": "t:show_on_display",
+      "default": "desktop_and_mobile",
+      "options": [
+        {
+          "value": "desktop_and_mobile",
+          "label": "t:desktop_and_mobile"
+        },
+        {
+          "value": "desktop_only",
+          "label": "t:desktop_only"
+        },
+        {
+          "value": "mobile_only",
+          "label": "t:mobile_only"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "date_end",
+      "label": "Fin de l'offre",
+      "default": "27/11/2026 23:59",
+      "info": "Format JJ/MM/AAAA HH:MM, heure de la boutique. Après cette date, la bannière disparaît automatiquement du site (elle reste visible dans l'éditeur avec un avertissement)."
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:color_scheme",
+      "default": "scheme-3"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "t:padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "t:padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "text",
+      "id": "additional_class",
+      "label": "t:additional_class",
+      "info": "t:additional_class_info"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bannière promo programmée",
+      "category": "t:offers",
+      "settings": {
+        "date_end": "27/11/2026 23:59",
+        "color_scheme": "scheme-3"
+      },
+      "blocks": [
+        {
+          "type": "group",
+          "settings": {
+            "layout_direction_desktop": "column",
+            "layout_gap_desktop": 10,
+            "layout_align_items_desktop": "flex-start",
+            "same_as_desktop": false,
+            "layout_direction_mobile": "column",
+            "layout_gap_mobile": 10,
+            "width_desktop": 60
+          },
+          "blocks": [
+            {
+              "type": "badges",
+              "blocks": [
+                {
+                  "type": "_badge",
+                  "settings": {
+                    "text": "Black Friday",
+                    "badge_style": "primary"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "settings": {
+                "text": "<h2>-20 % sur la rotule de levier de vitesse</h2>",
+                "text_style": "h3"
+              }
+            },
+            {
+              "type": "text",
+              "settings": {
+                "text": "<p>Rotule Renault 4 à <strong>12,50 €</strong> au lieu de 16 € (montage simplifié : <strong>14,50 €</strong> au lieu de 18 €). Jusqu'au vendredi 27/11 à 23h59, uniquement sur camaraid.fr.</p>",
+                "text_style": "paragraph"
+              }
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "settings": {
+            "layout_direction_desktop": "column",
+            "layout_gap_desktop": 16,
+            "layout_align_items_desktop": "center",
+            "same_as_desktop": false,
+            "layout_direction_mobile": "column",
+            "layout_gap_mobile": 14,
+            "width_desktop": 35
+          },
+          "blocks": [
+            {
+              "type": "countdown",
+              "settings": {
+                "wrap_in_card": false,
+                "timer_font_size": 26,
+                "timer_font_weight": 600,
+                "timer_style": "background",
+                "date_end": "27/11/2026 23:59",
+                "ended_timer_style": "hide_timer"
+              }
+            },
+            {
+              "type": "button",
+              "settings": {
+                "link": "shopify://products/rotule-levier-de-vitesse-renault-4",
+                "label": "J'en profite",
+                "button_style": "primary"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
