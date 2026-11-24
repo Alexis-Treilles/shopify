@@ -446,7 +446,7 @@
                   "type": "text",
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
+                    "text": "<p>Vous disposez de <strong>30 jours</strong> après réception pour retourner un produit, sans avoir à vous justifier (frais de retour à votre charge). Vous êtes remboursé sous 14 jours.</p><p>En cas de défaut, nos pièces sont couvertes par la <strong>garantie légale de conformité de 2 ans</strong> : réparation ou remplacement sans frais.</p><p><a href=\"/policies/refund-policy\">Lire la politique de retour complète</a></p>",
                     "text_style": "paragraph",
                     "paragraph_font_size": "normal",
                     "font_weight": 400,
@@ -1192,32 +1192,12 @@
                 "additional_class": ""
               },
               "blocks": {}
-            },
-            "button_qUpbgY": {
-              "type": "button",
-              "name": "t:button",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "link": "",
-                "open_in_new_tab": false,
-                "label": "Consultez notre aide",
-                "button_style": "secondary",
-                "button_shape": "full-width",
-                "icon": "none",
-                "icon_custom": "",
-                "icon_position": "end",
-                "margin_top": 0,
-                "margin_bottom": 0,
-                "additional_class": ""
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_VLtRib",
             "text_FyFaMj",
-            "button_Q3UxFk",
-            "button_qUpbgY"
+            "button_Q3UxFk"
           ]
         },
         "group_ampbiX": {
