@@ -2194,7 +2194,8 @@
         "margin_top": 50,
         "margin_bottom": 0,
         "additional_class": ""
-      }
+      },
+      "disabled": true
     },
     "promo_banner_LwPyKc": {
       "type": "promo-banner",

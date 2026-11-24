@@ -393,44 +393,6 @@
             "additional_class": ""
           },
           "blocks": {
-            "accordion_materiaux": {
-              "type": "_accordion",
-              "settings": {
-                "show_on_display": "desktop_and_mobile",
-                "heading": "Matériaux & qualité",
-                "open_by_default": false,
-                "icon": "none",
-                "icon_custom": "",
-                "additional_class": ""
-              },
-              "blocks": {
-                "text_mat": {
-                  "type": "text",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "text": "<p>Nos pièces sont fabriquées en <strong>matériaux techniques haute performance</strong> :<br/><br/>• <strong>PETG</strong> : résistance mécanique, légèreté, idéal pour les pièces intérieures<br/>• <strong>ABS</strong> : robustesse et résistance aux chocs<br/>• <strong>ASA</strong> : résistance aux UV et aux intempéries, pour les pièces exposées<br/><br/>Chaque matériau est choisi selon l'application et l'environnement de la pièce. Nos produits sont <strong>éprouvés dans des environnements contraignants</strong>, notamment sur le 4L Trophy 2026.</p>",
-                    "text_style": "paragraph",
-                    "paragraph_font_size": "normal",
-                    "font_weight": 400,
-                    "alignment": "left",
-                    "alignment_mobile": "left",
-                    "show_read_more": false,
-                    "read_more_length": 200,
-                    "read_more_text": "Voir plus",
-                    "read_less_text": "Voir moins",
-                    "truncate": false,
-                    "truncate_length": 2,
-                    "margin_top": 0,
-                    "margin_bottom": 0,
-                    "additional_class": ""
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_mat"
-              ]
-            },
             "accordion_gU7QYn": {
               "type": "_accordion",
               "settings": {
@@ -509,7 +471,6 @@
             }
           },
           "block_order": [
-            "accordion_materiaux",
             "accordion_gU7QYn",
             "accordion_mEqYBU"
           ]
@@ -575,7 +536,7 @@
         "image_position": "row",
         "product_info_width": 50,
         "gap": 60,
-        "carrousel_sticky": false,
+        "carrousel_sticky": true,
         "product_info_sticky": false,
         "carrousel_full_width": true,
         "padding_top": 30,
@@ -590,7 +551,7 @@
         "judge_me_reviews_cards_carousel_MEYzmB": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "show_sample_reviews": true,
+            "show_sample_reviews": false,
             "reviews_selection": "current_product",
             "products": [],
             "filter_pinned": false,
@@ -1324,82 +1285,6 @@
                 "additional_class": ""
               },
               "blocks": {
-                "accordion_wVm9bk": {
-                  "type": "_accordion",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "heading": "Politique de retour",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "icon_custom": "",
-                    "additional_class": ""
-                  },
-                  "blocks": {
-                    "text_b36xbk": {
-                      "type": "text",
-                      "settings": {
-                        "show_on_display": "desktop_and_mobile",
-                        "text": "<p>Notre objectif est que chaque client soit totalement satisfait de son achat. Si ce n'est pas le cas, faites-le nous savoir et nous ferons de notre mieux pour trouver une solution avec vous.</p>",
-                        "text_style": "paragraph",
-                        "paragraph_font_size": "normal",
-                        "font_weight": 400,
-                        "alignment": "left",
-                        "alignment_mobile": "left",
-                        "show_read_more": false,
-                        "read_more_length": 100,
-                        "read_more_text": "Voir plus",
-                        "read_less_text": "Voir moins",
-                        "truncate": false,
-                        "truncate_length": 2,
-                        "margin_top": 0,
-                        "margin_bottom": 0,
-                        "additional_class": ""
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_b36xbk"
-                  ]
-                },
-                "accordion_FDaFgh": {
-                  "type": "_accordion",
-                  "settings": {
-                    "show_on_display": "desktop_and_mobile",
-                    "heading": "Livraison",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "icon_custom": "",
-                    "additional_class": ""
-                  },
-                  "blocks": {
-                    "text_yarNag": {
-                      "type": "text",
-                      "settings": {
-                        "show_on_display": "desktop_and_mobile",
-                        "text": "<p>Nos pièces étant <strong>fabriquées à la commande</strong>, votre commande est expédiée sous <strong>3 jours ouvrés</strong>.<br/><br/><strong>Options de livraison :</strong><br/>• <strong>Colissimo</strong> : 2-3 jours ouvrés après expédition<br/>• <strong>Mondial Relais</strong> : 4-6 jours ouvrés après expédition<br/><br/>Vous recevrez un email avec votre numéro de suivi dès l'expédition.</p>",
-                        "text_style": "paragraph",
-                        "paragraph_font_size": "normal",
-                        "font_weight": 400,
-                        "alignment": "left",
-                        "alignment_mobile": "left",
-                        "show_read_more": false,
-                        "read_more_length": 100,
-                        "read_more_text": "Voir plus",
-                        "read_less_text": "Voir moins",
-                        "truncate": false,
-                        "truncate_length": 2,
-                        "margin_top": 0,
-                        "margin_bottom": 0,
-                        "additional_class": ""
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_yarNag"
-                  ]
-                },
                 "accordion_9NiJU7": {
                   "type": "_accordion",
                   "settings": {
@@ -1478,8 +1363,6 @@
                 }
               },
               "block_order": [
-                "accordion_wVm9bk",
-                "accordion_FDaFgh",
                 "accordion_9NiJU7",
                 "accordion_compat"
               ]
