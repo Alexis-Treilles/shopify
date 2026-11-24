@@ -624,7 +624,7 @@
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
                     "product": "{{ closest.product }}",
-                    "hide_rating_when_no_reviews": false,
+                    "hide_rating_when_no_reviews": true,
                     "rating": 4.5,
                     "show_note": true,
                     "show_review_count": true,
@@ -917,7 +917,7 @@
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
                     "product": "{{ closest.product }}",
-                    "hide_rating_when_no_reviews": false,
+                    "hide_rating_when_no_reviews": true,
                     "rating": 4.5,
                     "show_note": true,
                     "show_review_count": true,
@@ -2631,7 +2631,7 @@
                   "settings": {
                     "show_on_display": "desktop_and_mobile",
                     "product": "{{ closest.product }}",
-                    "hide_rating_when_no_reviews": false,
+                    "hide_rating_when_no_reviews": true,
                     "rating": 4.5,
                     "show_note": true,
                     "show_review_count": true,

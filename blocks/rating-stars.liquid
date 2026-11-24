@@ -10,7 +10,7 @@
 
   if product != blank
     assign rating = product.metafields.reviews.rating.value | default: 0
-    assign rating_count = product.metafields.reviews.rating_count | default: 0
+    assign rating_count = product.metafields.reviews.rating_count.value | default: 0
 
     if product.metafields.reviews.rating.value == blank
       assign rating = product.metafields.loox.avg_rating | default: 0
