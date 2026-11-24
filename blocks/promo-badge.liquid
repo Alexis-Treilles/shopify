@@ -1,0 +1,171 @@
+{%- capture promo_end_ts -%}{%- render 'promo-end-timestamp', date: block.settings.date_end -%}{%- endcapture -%}
+{%- liquid
+  assign promo_end_ts = promo_end_ts | strip | plus: 0
+  assign promo_now_ts = 'now' | date: '%s' | plus: 0
+  assign promo_visible = true
+  if promo_end_ts > 0 and promo_now_ts > promo_end_ts
+    assign promo_visible = false
+  endif
+
+  if block.settings.products.count > 0
+    assign promo_current = closest.product | default: product
+    assign promo_match = false
+    for p in block.settings.products
+      if p.id == promo_current.id
+        assign promo_match = true
+        break
+      endif
+    endfor
+    unless promo_match
+      assign promo_visible = false
+    endunless
+  endif
+
+  if request.design_mode
+    assign promo_visible = true
+  endif
+-%}
+
+{%- if promo_visible and block.settings.text != blank -%}
+  <div
+    class="
+      promo-badge
+      {%- if block.settings.show_on_display == 'desktop_only' %} mobile-hide{% endif -%}
+      {%- if block.settings.show_on_display == 'mobile_only' %} desktop-hide{% endif -%}
+      {%- if block.settings.additional_class != blank %} {{ block.settings.additional_class }}{% endif -%}
+    "
+    style="
+      --margin-top: {{ block.settings.margin_top }}px;
+      --margin-bottom: {{ block.settings.margin_bottom }}px;
+    "
+    data-promo-end="{{ promo_end_ts }}"
+    {% if request.design_mode %}data-promo-preview{% endif %}
+    {{ block.shopify_attributes }}
+  >
+    <span class="badge badge--{{ block.settings.badge_style }} promo-badge__label">{{ block.settings.text }}</span>
+    {%- if block.settings.subtext != blank -%}
+      <span class="promo-badge__subtext">{{ block.settings.subtext }}</span>
+    {%- endif -%}
+    <script>
+      (() => {
+        const el = document.currentScript.parentElement;
+        const end = Number(el.dataset.promoEnd);
+        const check = () => { if (end > 0 && Date.now() / 1000 > end && !el.hasAttribute('data-promo-preview')) el.remove(); };
+        check();
+        setInterval(check, 30000);
+      })();
+    </script>
+  </div>
+{%- endif -%}
+
+{% stylesheet %}
+  .promo-badge {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap-sm, 10px);
+    margin-top: var(--margin-top);
+    margin-bottom: var(--margin-bottom);
+  }
+
+  .promo-badge__label {
+    font-size: var(--font-body--size, 15px);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+  }
+
+  .promo-badge__subtext {
+    font-size: var(--font-body--size-small, 13px);
+    opacity: 0.8;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Badge promo programmé",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "show_on_display",
+      "label": "t:show_on_display",
+      "default": "desktop_and_mobile",
+      "options": [
+        { "value": "desktop_and_mobile", "label": "t:desktop_and_mobile" },
+        { "value": "desktop_only", "label": "t:desktop_only" },
+        { "value": "mobile_only", "label": "t:mobile_only" }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Texte du badge",
+      "default": "Black Friday -20 %"
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Texte à côté du badge",
+      "default": "Offre valable jusqu'au vendredi 27/11 à 23h59"
+    },
+    {
+      "type": "select",
+      "id": "badge_style",
+      "label": "t:badge_style",
+      "options": [
+        { "value": "primary", "label": "t:primary" },
+        { "value": "secondary", "label": "t:secondary" }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "text",
+      "id": "date_end",
+      "label": "Fin de l'offre",
+      "default": "27/11/2026 23:59",
+      "info": "Format JJ/MM/AAAA HH:MM, heure de la boutique. Après cette date, le badge disparaît automatiquement."
+    },
+    {
+      "type": "product_list",
+      "id": "products",
+      "label": "Produits concernés",
+      "info": "Le badge ne s'affiche que sur ces fiches produit. Vide = tous les produits.",
+      "limit": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "label": "t:margin_top",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "label": "t:margin_bottom",
+      "default": 10,
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "additional_class",
+      "label": "t:additional_class",
+      "info": "t:additional_class_info"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Badge promo programmé",
+      "category": "t:offers"
+    }
+  ]
+}
+{% endschema %}
