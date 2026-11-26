@@ -53,6 +53,18 @@
           },
           "blocks": {}
         },
+        "fin_bobines_notice": {
+          "type": "custom-code",
+          "name": "Avertissement Fin de bobines",
+          "settings": {
+            "show_on_display": "desktop_and_mobile",
+            "custom_liquid": "{%- assign fb_all = product.variants | map: 'title' | join: '|' -%}\n{%- if fb_all contains 'Fin de bobines' -%}\n{%- assign fb_sel = product.selected_or_first_available_variant.title -%}\n<div class=\"fin-bobines-notice\" data-fin-bobines-notice{% unless fb_sel contains 'Fin de bobines' %} hidden{% endunless %}>\n<strong>Version « Fin de bobines »</strong> : rotule généralement bicolore, fabriquée avec des fins de bobines. La couleur ne correspond pas forcément aux photos et des défauts esthétiques peuvent être visibles, sans impact sur le fonctionnement.\n</div>\n<style>.fin-bobines-notice{margin-top:10px;padding:10px 12px;border-left:3px solid #e0a100;background:#fff7e0;border-radius:4px;font-size:14px;line-height:1.4;color:#3a2e00}.fin-bobines-notice[hidden]{display:none}</style>\n<script>document.addEventListener('variant:updated',function(e){var r=e.detail&&e.detail.resource;if(!r)return;var on=(r.title||'').indexOf('Fin de bobines')!==-1;document.querySelectorAll('[data-fin-bobines-notice]').forEach(function(n){n.hidden=!on;});});</script>\n{%- endif -%}",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "additional_class": ""
+          },
+          "blocks": {}
+        },
         "price_yEeMeb": {
           "type": "product-price",
           "name": "t:price",
@@ -520,6 +532,7 @@
       "block_order": [
         "promo_badge_X6bpBc",
         "text_zLqMQw",
+        "fin_bobines_notice",
         "price_yEeMeb",
         "product_form_grYQk6",
         "text_livraison",
